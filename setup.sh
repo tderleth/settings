@@ -11,3 +11,6 @@ sh brew/brew.sh
 
 # Brew Cask
 sh brew/brew-cask.sh
+
+# vscode 
+sh ./vscode/extensions.sh
