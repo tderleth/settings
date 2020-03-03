@@ -7,4 +7,3 @@ This repository serves as a bootstrap script collection when setting up a new Ma
 - [xcode](./xcode)
 - [vscode](./vscode)
 - [git](./git)
-
