@@ -1,0 +1,34 @@
+[alias]
+  br  = branch
+  c = commit -am
+  co = checkout
+  d = diff --color --color-words --abbrev
+  l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  p = push
+  s = status -s
+  up = pull
+  push = push --set-upstream origin master
+
+[core]
+  attributesfile = ~/.gitattributes
+  excludesfile = ~/.gitignore
+  ignorecase = false
+  pager = diff-so-fancy | less --tabs=4 -RFX
+
+[color]
+  ui = always
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[credential]
+  helper = osxkeychain
+
+[fetch]
+  prune = true
+
+[user]
+  name = Thomas Derleth
+  email = thomas.derleth@me.com
