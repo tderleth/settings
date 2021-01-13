@@ -15,7 +15,6 @@ brew tap caskroom/versions
 
 # Applications
 brew cask install alfred
-brew cask install dropbox
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install sketch

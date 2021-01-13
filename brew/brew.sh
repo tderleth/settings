@@ -1,4 +1,4 @@
-  
+
 #!/usr/bin/env bash
 
 # Install command-line tools using Homebrew.
@@ -7,7 +7,7 @@
 sudo -v
 
 # Install Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Make sure we’re using the latest Homebrew.
 brew update
@@ -17,17 +17,15 @@ brew upgrade
 
 brew tap homebrew/php
 
+brew install bat
 brew install docker
 brew install docker-compose
 brew install git
 brew install git-flow
-brew install mongodb
-brew install mysql
 brew install nano
 brew install nvm
 brew install watchman
-brew install zsh
-brew install zsh-autosuggestions
+brew link nvm
 
 # Remove outdated versions from the cellar.
 brew cleanup
